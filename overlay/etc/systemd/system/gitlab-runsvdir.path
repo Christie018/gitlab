@@ -1,0 +1,9 @@
+[Unit]
+Description="Replacing incron with systemd."
+
+[Path]
+DirectoryNotEmpty=/
+Unit=gitlab-runsvdir.service
+
+[Install]
+WantedBy=basic.target
